@@ -1,0 +1,1 @@
+A hyperplane in d-dimensional space is continuously changed in position and orientation continuous addition. We used the Random Hyperplane generator in MOA with the same parametrization as in PAW (10 dimensions, 2 classes, delta=0.001). It contains 200K instances, 10 attributes and 2 classes, drift type: real incremental.

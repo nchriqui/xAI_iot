@@ -1,0 +1,14 @@
+Date: date between 7 May 1996 to 5 December 1998. Here normalized between 0 and 1
+Day: day of the week (1-7)
+Period: time of the measurement (1-48) in half hour intervals over 24 hours. Here normalized between 0 and 1
+NSWprice: New South Wales electricity price, normalized between 0 and 1
+NSWdemand: New South Wales electricity demand, normalized between 0 and 1
+VICprice: Victoria electricity price, normalized between 0 and 1
+VICdemand: Victoria electricity demand, normalized between 0 and 1
+transfer: scheduled electricity transfer between both states, normalized between 0 and 1
+class: Target variable identifies the change of the price (UP = 1 or DOWN = 0) in New South Wales relative to a moving average of the last 24 hours.
+
+
+The data used in this experiments was first described by M. Harries [3]. The data was collected from the Australian New South Wales Electricity Market. In this market, the prices are not fixed and are affected by demand and supply of the market. The prices in this market are set every five minutes. Harries [3] shows the seasonality of the price construction and the sensitivity to short-term events such as weather fluctuations. Another factor on the price evolution was the time evolution of the electricity market. During the time period described in the data the electricity market was expanded with the inclusion of adjacent areas. This allowed for a more elaborated management of the supply. The excess production of one region could be sold on the adjacent region. A consequence of this expansion was a dampener of the extreme prices. The ELEC2 dataset contains 45312 instances dated from 7 May 1996 to 5 December 1998. Each example of the dataset refers to a period of 30 minutes, i. e. there are 48 instances for each time period of one day. Each example on the dataset has 5 fields, the day of week, the time stamp, the NSW electricity demand, the Vic electricity demand, the scheduled electricity transfer between states and the class label. 
+The class label identifies the change of the price related to a moving average of the last 24 hours (UP or DOWN). The class level only reflect deviations of the price on a one day average and removes the impact of longer term price trends. 
+The interest of this dataset is that it is a real-world dataset. We do not know when drift occurs or if there is drift.
